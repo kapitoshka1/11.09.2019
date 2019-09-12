@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Itelon</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+</head>
+<body>
+  
+<?php
+abstract class indicator
+{
+   /* Данный метод должен быть определён в дочернем классе */
+    abstract public function weight();
+    abstract public function height();
+    abstract public function strength();
+
+}
+
+
+
+
+class warrior extends indicator
+{
+    public function weight() {
+        
+        echo "80". "\n";
+    }
+
+    public function height() {
+        
+        echo "190". "\n";
+    }
+
+    public function strength() {
+        
+        echo "80". "\n";
+    }
+}
+
+class magick extends indicator
+{
+      public function weight() {
+        echo "70" . "\n";
+    }
+
+    public function height() {
+        echo "175" . "\n";
+    }
+
+    public function strength() {
+        echo "40" . "\n";
+    }
+}
+
+class bogatir extends indicator
+{
+      public function weight() {
+        echo "100". "\n";
+    }
+
+    public function height() {
+        echo "180". "\n";
+    }
+
+    public function strength() {
+        echo "120". "\n";
+    }
+}
+
+
+$class1 = new warrior;
+ $class1->weight();	
+ $class1->height();	
+ $class1->strength();	
+echo "</br>";
+
+
+$class2 = new magick;
+ $class2->weight();	
+ $class2->height();	
+ $class2->strength();	
+echo "</br>";
+
+$class3 = new bogatir;
+ $class3->weight();	
+ $class3->height();	
+ $class3->strength();	
+echo "</br>";
+
+
+?>
+
+
+<script src="js/materialize.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/materiallize097.js"></script>
+<script src="js/materiallize100.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
